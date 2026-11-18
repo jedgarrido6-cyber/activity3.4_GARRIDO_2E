@@ -2,7 +2,7 @@ from collections import deque
 
 
 class GraphGarrido:
-    """Undirected Graph representation, BFS, and DFS traversal for GARRIDO."""
+    """Undirected Graph representation, BFS, and DFS traversal for JED GARRIDO."""
 
     def __init__(self):
         self.adj_list = {}
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     for src, dest in edges:
         graph.add_edge(src, dest)
 
-    print("=== GRAPH STRUCTURE (GARRIDO) ===")
+    print("=== GRAPH STRUCTURE (JED GARRIDO) ===")
     graph.display_graph()
     print()
     graph.bfs('G')

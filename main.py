@@ -5,7 +5,7 @@ from graph_garrido import GraphGarrido
 def main():
     print("==========================================")
     print(" ASSESSMENT 3.4 & 3.6: NON-LINEAR DATA STRUCTURE")
-    print(" Student: GARRIDO")
+    print(" Student: JED GARRIDO")
     print("==========================================\n")
 
     # 1. Binary Tree Execution

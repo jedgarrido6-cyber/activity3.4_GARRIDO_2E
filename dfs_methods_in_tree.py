@@ -1,5 +1,5 @@
 class TreeNode:
-    """Represents a node in the Binary Tree for GARRIDO."""
+    """Represents a node in the Binary Tree for JED GARRIDO."""
     def __init__(self, data: str):
         self.data = data
         self.left = None
@@ -7,7 +7,7 @@ class TreeNode:
 
 
 class DFSTreeGarrido:
-    """DFS Traversals (PreOrder, InOrder, PostOrder) for GARRIDO Binary Tree."""
+    """DFS Traversals (PreOrder, InOrder, PostOrder) for JED GARRIDO Binary Tree."""
 
     @staticmethod
     def pre_order(root):
@@ -44,7 +44,7 @@ if __name__ == "__main__":
 
     print("==========================================")
     print(" ASSESSMENT 3.6: DFS METHODS IN TREE")
-    print(" Student: GARRIDO")
+    print(" Student: JED GARRIDO")
     print("==========================================\n")
 
     print("PreOrder  (Root -> Left -> Right):", " -> ".join(DFSTreeGarrido.pre_order(root)))

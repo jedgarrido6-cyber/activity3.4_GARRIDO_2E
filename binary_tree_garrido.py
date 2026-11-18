@@ -8,7 +8,7 @@ class TreeNode:
 
 
 class BinaryTreeGarrido:
-    """Binary Tree construction and traversals for GARRIDO."""
+    """Binary Tree construction and traversals for JED GARRIDO."""
 
     @staticmethod
     def pre_order(root):
@@ -36,7 +36,7 @@ class BinaryTreeGarrido:
 
 
 if __name__ == "__main__":
-    # Constructing the Binary Tree for GARRIDO
+    # Constructing the Binary Tree for JED GARRIDO
     root = TreeNode('G')
     root.left = TreeNode('A')
     root.right = TreeNode('R')
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     root.right.left = TreeNode('D')
     root.right.right = TreeNode('O')
 
-    print("=== BINARY TREE TRAVERSALS (GARRIDO) ===")
+    print("=== BINARY TREE TRAVERSALS (JED GARRIDO) ===")
     print("Pre-Order (Root -> Left -> Right):  ", end="")
     BinaryTreeGarrido.pre_order(root)
     print()
