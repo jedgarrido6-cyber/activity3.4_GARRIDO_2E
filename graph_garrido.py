@@ -2,7 +2,7 @@ from collections import deque
 
 
 class GraphGarrido:
-    """Undirected Graph representation and BFS traversal for GARRIDO (Assessment 3.3)."""
+    """Undirected Graph representation, BFS, and DFS traversal for GARRIDO."""
 
     def __init__(self):
         self.adj_list = {}
@@ -37,12 +37,26 @@ class GraphGarrido:
                     queue.append(neighbor)
         print()
 
+    def dfs(self, start_node: str):
+        visited = set()
+        print(f"DFS Traversal starting from '{start_node}': ", end="")
+
+        def _dfs_helper(node):
+            visited.add(node)
+            print(node, end=" ")
+
+            for neighbor in self.adj_list.get(node, []):
+                if neighbor not in visited:
+                    _dfs_helper(neighbor)
+
+        _dfs_helper(start_node)
+        print()
+
 
 if __name__ == "__main__":
     graph = GraphGarrido()
+    edges = [('G', 'A'), ('A', 'R1'), ('R1', 'R2'), ('R2', 'I'), ('I', 'D'), ('D', 'O')]
 
-    # Sequential edges connecting the unique vertices of GARRIDO: G, A, R, I, D, O
-    edges = [('G', 'A'), ('A', 'R'), ('R', 'I'), ('I', 'D'), ('D', 'O')]
     for src, dest in edges:
         graph.add_edge(src, dest)
 
@@ -50,3 +64,4 @@ if __name__ == "__main__":
     graph.display_graph()
     print()
     graph.bfs('G')
+    graph.dfs('G')

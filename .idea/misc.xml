@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="~\PycharmProjects\GARRIDO\.venv" project-jdk-type="Python SDK" />
+  <component name="Black">
+    <option name="sdkName" value="Python 3.14 (activity3.4_GARRIDO_2E)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.14 (activity3.4_GARRIDO_2E)" project-jdk-type="Python SDK" />
 </project>
